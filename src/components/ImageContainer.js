@@ -12,22 +12,22 @@ function ImageContainer () {
     
     .then ( 
       res => setData(res.data)
-      
     )
-   }, [data.url])
+  }, [data.url])
   return (
-  <div className="ImageContainer">
-    
-    <p>NASA ASTRONOMY PHOTO of the DAY</p>
-    <Image image={data} />
-    
-  </div>
+    <div className="ImageContainer">
+        
+      <p>NASA ASTRONOMY PHOTO of the DAY</p>
+      
+      <Image image={data} />
+        
+    </div>
 
   )
 
     
   
-  }
+}
   
    
    

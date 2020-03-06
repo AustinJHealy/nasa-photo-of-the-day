@@ -11,22 +11,24 @@ function ImageInfo () {
     axios.get("https://api.nasa.gov/planetary/apod?api_key=KIgeE6B1p5RrbH06R2C7yYeHZFGIuCFKPtbpXLrQ")
     
     .then ( 
-      res => setData(res.data)
-      
-    )
-   }, [data.url])
+      res => setData(res.data))
+    
+    .catch(err => console.log(err))
+   
+   }, [])
+  
   return (
   
   <div className="ImageInfo">
     
-    <div className="imageinfo">
-      <p>{data.copyright}</p>
-      <p>{data.date}</p>
-      <p>{data.title}</p>
-      <p>{data.explanation}</p>
+    
+    <p>{data.copyright}</p>
+    <p>{data.date}</p>
+    <p>{data.title}</p>
+    <p>{data.explanation}</p>
     
 
-    </div>
+    
   </div>
 
   )
