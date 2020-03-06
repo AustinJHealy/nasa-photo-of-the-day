@@ -13,7 +13,8 @@ function ImageContainer () {
     .then ( 
       res => setData(res.data)
     )
-  }, [data.url])
+    .catch(err => console.log(err))
+  }, [])
   return (
     <div className="ImageContainer">
         
