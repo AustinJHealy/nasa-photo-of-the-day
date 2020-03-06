@@ -1,15 +1,25 @@
 import React from "react";
 import "./App.css";
+import ImageContainer from "./components/ImageContainer";
+import ImageInfo from "./components/ImageInfo";
 
+  
 function App() {
+  
   return (
+  
+    
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <ImageContainer  />
+      <ImageInfo />
     </div>
-  );
-}
+  )
+
+
+  }
+  
+
+
+
 
 export default App;
