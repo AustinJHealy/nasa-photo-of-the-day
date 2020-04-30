@@ -1,4 +1,8 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -35,4 +39,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Calendar{
+  color: red;
+  width: 25%;
+  height: 25%;
 }
