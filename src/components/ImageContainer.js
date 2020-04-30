@@ -8,7 +8,7 @@ function ImageContainer () {
    const [data, setData] = useState({});
    
    useEffect (()=> {
-    axios.get("https://api.nasa.gov/planetary/apod?api_key=KIgeE6B1p5RrbH06R2C7yYeHZFGIuCFKPtbpXLrQ")
+    axios.get("https://api.nasa.gov/planetary/apod?api_key=KIgeE6B1p5RrbH06R2C7yYeHZFGIuCFKPtbpXLrQ&date=2012-03-14")
     
     .then ( 
       res => setData(res.data)
